@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-UA-compatible" content="IEwedge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <script src="https://kit.fontawesome.com/1169579871.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>My test online store</title>
+    
+  </head>
+  <body>
+    <p>rock paper scissors</p>
+    <button onclick="
+   const randomMath= Math.random();
+  
+   let computerMove = '';
+
+   if (randomMath >= 0 && randomMath < 1/3) {
+   computerMove = 'rock';
+
+   } else if (randomMath >= 1/3 && randomMath < 2/3) {
+    computerMove ='paper';
+
+   } else if (randomMath >= 2/3 && randomMath < 1) {
+    computerMove = 'scissors';
+   }
+   console.log(computerMove);
+
+   let result= '';
+
+   if (computerMove === 'rock') {
+     result = 'tie.';
+   } else if (computerMove === 'paper') {
+      result = 'you lose.';
+   } else if (computerMove === 'scissors') {
+     result = 'you win.';
+   }
+   alert(`you picked rock.computer picked ${computerMove}.${result}`);
+   
+    ">rock</button>
+    <button>paper</button>
+    <button>scissors</button>
+
+  <script ></script> 
+  </body>
+</html>
